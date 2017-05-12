@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8A904A78-7E55-48FC-AAF5-CB0023CD0D39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebUI</RootNamespace>
+    <AssemblyName>WebUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebKitBrowser, Version=0.5.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\WebKitBrowser.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Modern_admin\basic_tables.html" />
+    <Content Include="Modern_admin\compose.html" />
+    <Content Include="Modern_admin\css\clndr.css" />
+    <Content Include="Modern_admin\css\custom.css" />
+    <Content Include="Modern_admin\css\jqvmap.css" />
+    <Content Include="Modern_admin\css\lines.css" />
+    <Content Include="Modern_admin\css\style.css" />
+    <Content Include="Modern_admin\forms.html" />
+    <Content Include="Modern_admin\graphs.html" />
+    <Content Include="Modern_admin\grids.html" />
+    <Content Include="Modern_admin\images\1.png" />
+    <Content Include="Modern_admin\images\2.png" />
+    <Content Include="Modern_admin\images\3.png" />
+    <Content Include="Modern_admin\images\4.png" />
+    <Content Include="Modern_admin\images\5.png" />
+    <Content Include="Modern_admin\images\arrow-left.png" />
+    <Content Include="Modern_admin\images\arrow-right.png" />
+    <Content Include="Modern_admin\images\bg.jpg" />
+    <Content Include="Modern_admin\images\cloud.png" />
+    <Content Include="Modern_admin\images\logo.png" />
+    <Content Include="Modern_admin\images\pic1.png" />
+    <Content Include="Modern_admin\images\pic2.png" />
+    <Content Include="Modern_admin\images\pic3.jpg" />
+    <Content Include="Modern_admin\images\pic4.jpg" />
+    <Content Include="Modern_admin\inbox.html" />
+    <Content Include="Modern_admin\index.html" />
+    <Content Include="Modern_admin\js\Chart.js" />
+    <Content Include="Modern_admin\js\clndr.js" />
+    <Content Include="Modern_admin\js\custom.js" />
+    <Content Include="Modern_admin\js\d3.v3.js" />
+    <Content Include="Modern_admin\js\jquery.vmap.js" />
+    <Content Include="Modern_admin\js\jquery.vmap.sampledata.js" />
+    <Content Include="Modern_admin\js\jquery.vmap.world.js" />
+    <Content Include="Modern_admin\js\metisMenu.min.js" />
+    <Content Include="Modern_admin\js\moment-2.2.1.js" />
+    <Content Include="Modern_admin\js\rickshaw.js" />
+    <Content Include="Modern_admin\js\site.js" />
+    <Content Include="Modern_admin\js\underscore-min.js" />
+    <Content Include="Modern_admin\login.html" />
+    <Content Include="Modern_admin\media.html" />
+    <Content Include="Modern_admin\register.html" />
+    <Content Include="Modern_admin\typography.html" />
+    <Content Include="Modern_admin\validation.html" />
+    <Content Include="Modern_admin\widgets.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
